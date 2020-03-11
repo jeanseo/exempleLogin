@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= "Liste des bières"
+    ul
+    each beer in beerList
+        li
+            a(href="edit/"+beer._id)= beer.name

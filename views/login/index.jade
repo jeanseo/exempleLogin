@@ -1,0 +1,12 @@
+extends ../layout
+
+Block content
+    form(method='POST', action='/login')
+        div.input
+            span.label Name
+            input(type="text", name="name", value=beer.name)
+        div.input
+            span.label Name
+            input(type="text", name="name", value=beer.name)
+        div.actions
+            input(type="submit", value="update")

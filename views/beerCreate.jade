@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    form(method="post", action='/create')
+        div.input
+            span.label Name
+            input(type="text", name="name")
+        div.input
+            span.label Type
+            input(type="text", name="type")
+        div.input
+            span.label Brewery
+            input(type="text", name="brewery")
+        div.input
+            span.label Tried
+            input(type="checkbox", name="tried")
+        div.actions
+            input(type="submit", value="add")
+
